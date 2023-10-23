@@ -1,13 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+
+
+import App from './Landing page/App';
+import Finder from './API consume/Finder.js'
+import Rola from './Teste/rola.js';
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <App />
+  },
+  {
+    path:"/finder",
+    element: <Finder />
+  },
+  {
+    path:"/rola",
+    element: <Rola />
+  }
+
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
