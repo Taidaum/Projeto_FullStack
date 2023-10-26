@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
+import './rola.css';
 import Button from 'react-bootstrap/Button';
 
 function Rola() {
@@ -45,7 +46,7 @@ function Rola() {
         aria-label="Default select example"
         className='form'
         onChange={(e) => setSelectedOption(e.target.value)}
-        >
+      >
         <option value="waifu">waifu</option>
         <option value="neko">neko</option>
         <option value="shinobu">shinobu</option>
@@ -79,13 +80,13 @@ function Rola() {
         <option value="cringe">cringe</option>
       </Form.Select>
 
-        
+
 
       {isLoading ? (
         <p>Loading your Waifu...</p>
       ) : (
         <div className='img'>
-          <img src={data.url} alt="50%" height="50%" />
+          <img src={data.url} height="50%" />
         </div>
       )}
     </div>
