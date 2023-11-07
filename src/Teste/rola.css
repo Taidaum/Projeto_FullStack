@@ -1,34 +1,30 @@
-html,
 .container {
-
-    background-color: #282c34;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    margin: 0;
-}
-
-
-.form {
+    height: 100vh; /* Isso centralizará verticalmente na tela inteira, ajuste conforme necessário */
+  }
+  
+.form{
     margin-bottom: 20px;
 }
 
 .img {
-    padding-top: 50px;
-    /* Garante que a imagem não seja maior que o contêiner */
+    max-width: 100%; /* Garante que a imagem não seja maior que o contêiner */
     align-items: center;
-    padding: 70px;
-    width: 600px;
-    /* Defina o tamanho desejado para as imagens */
-    height: 600px;
-    /* Defina o tamanho desejado para as imagens */
-
+    padding: 10px;
 }
 
-.btn {
+.btn{
     margin-top: 20px;
+}
+  
+.App-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }

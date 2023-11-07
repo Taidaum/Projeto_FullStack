@@ -12,7 +12,19 @@ function App() {
           <button type="button" className ="btn btn-primary btn-lg">you won't regret</button>
         </Link>
       </header>
+
+      <footer className='App-footer'>
+      <Link to="/Finder">
+          <button type="button" className ="btn btn-primary btn-lg">Finder</button>
+        </Link>
+        <Link to="/Rola">
+          <button type="button" className ="btn btn-primary btn-lg">API</button>
+        </Link>
+      </footer>
+
+
     </div>
+    
   );
 }
 

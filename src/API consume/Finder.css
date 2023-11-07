@@ -1,12 +1,22 @@
-.Finder {
+* {
   background-color: #282c34;
-  min-height: 100vh;
+  color: aliceblue;
+
+}
+
+.footer {
+  background-color: #282c34;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 5vmin);
+  margin-top: 40%;
   color: white;
-  margin: 0;
+  position: fixed;
+  left: 45%;
+}
 
+.finder1 {
+  align-items: center;
+  align-content: center;
 }
