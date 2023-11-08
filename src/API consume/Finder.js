@@ -13,7 +13,7 @@ function Finder() {
 
       <footer className='footer'>
         <Link to="/">
-          <button type="button" className="btn btn-primary btn-lg">Landing Page</button>
+          <button type="button" className="btn btn-primary btn-lg">Início</button>
         </Link>
         <Link to="/Rola">
           <button type="button" className="btn btn-primary btn-lg">API</button>

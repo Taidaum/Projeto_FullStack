@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 function Rola() {
   const [data, setData] = useState([]);
@@ -76,6 +77,14 @@ function Rola() {
           <img src={data.url} alt="50%" height="50%" />
         </div>
       )}
+        <footer className='App-footer'>
+      <Link to="/Finder">
+          <button type="button" className ="btn btn-primary btn-lg">Finder</button>
+        </Link>
+        <Link to="/">
+          <button type="button" className ="btn btn-primary btn-lg">Início</button>
+        </Link>
+      </footer>
     </div>
   );
 }
