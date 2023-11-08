@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>The Best Waifu finder Ever!!</h1>
+        <h1>The Best Waifu finder Ever!</h1>
         <Link to="/Finder">
           <button type="button" className ="btn btn-primary btn-lg">you won't regret</button>
         </Link>
